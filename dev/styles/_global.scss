@@ -1,0 +1,33 @@
+// variables
+
+$Mont-text: 'Montserrat', sans-serif;
+$Ral-text: 'Raleway', sans-serif;
+
+// mixins
+
+@mixin font-size-value($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+// wrappers
+.wrapper--max {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.wrapper--inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper--footer-nav {
+    max-width: 1300px;
+    margin: 0 auto; 
+}
+
+// base size
+
+html {
+    font-size: 62.5%;
+}
