@@ -3,6 +3,13 @@
 $Mont-text: 'Montserrat', sans-serif;
 $Ral-text: 'Raleway', sans-serif;
 
+$white: rgb(255, 255, 255);
+$black: rgb(30, 30, 30);
+$teal: rgb(27, 188, 155);
+$forest: rgb(38, 132, 96);
+$grey: rgb(86, 86, 86);
+$lighter-grey: rgb(161, 161, 161);
+
 // mixins
 
 @mixin font-size-value($sizeValue){
@@ -30,4 +37,18 @@ $Ral-text: 'Raleway', sans-serif;
 
 html {
     font-size: 62.5%;
+}
+
+.testing-typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

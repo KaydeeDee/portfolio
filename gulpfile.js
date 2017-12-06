@@ -25,7 +25,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('scripts', () => {
-    gulp.src('./dev/scripts/main.js')
+    gulp.src('./dev/scripts/*.js')
     .pipe(babel({
     presets: ['env']
     }))
