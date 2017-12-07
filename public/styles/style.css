@@ -319,3 +319,48 @@ header h1 {
   max-width: 60%; }
   .section-about-me--text .section--sub-heading {
     font-weight: 600; }
+
+.section--tech-skills-icons, .section--tech-skills-icons-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.icons--first-square {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #1bbc9b;
+  padding-left: 1.7%;
+  padding-top: 2%;
+  margin: 20px;
+  color: #1bbc9b;
+  font-size: 90px;
+  font-size: 9rem; }
+  .icons--first-square:hover {
+    color: white;
+    background: #1bbc9b; }
+
+.section--portfolio-two-col-left, .section--portfolio-two-col-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.section--portfolio-image {
+  max-width: 40%; }
+
+.section--portfolio-text-buttons {
+  max-width: 50%; }
+
+.section--portfolio-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

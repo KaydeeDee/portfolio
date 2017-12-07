@@ -1,0 +1,24 @@
+.section--tech-skills-icons, .section--tech-skills-icons-back {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icons--first-square {
+    width: 120px;
+    height: 120px;
+    border: 1px solid $teal;
+    padding-left: 1.7%;
+    padding-top: 2%;
+    margin: 20px;
+    color: $teal;
+    @include font-size-value(90);
+    &:hover {
+        color: white;
+        background: $teal;
+    }
+}
+
+

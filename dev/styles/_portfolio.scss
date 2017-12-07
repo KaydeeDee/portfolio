@@ -1,0 +1,17 @@
+.section--portfolio-two-col-left, .section--portfolio-two-col-right {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section--portfolio-image {
+    max-width: 40%;
+}
+
+.section--portfolio-text-buttons {
+    max-width: 50%;
+}
+
+.section--portfolio-button {
+    display: flex;
+}
