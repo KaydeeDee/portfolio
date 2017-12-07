@@ -1,0 +1,42 @@
+nav {
+    background: rgba($black, 1);
+    padding: 1px;
+}
+
+.nav--logo {
+    width: 30%;
+    margin-top: 15px;
+    img {
+        max-width: 20%;
+    }
+}
+
+.nav--list {
+    width: 70%;
+}
+
+.nav--flex-overall, .nav--flex-list {
+    display: flex;
+}
+
+.nav--flex-overall {
+    justify-content: space-between;
+}
+
+.nav--flex-list {
+    justify-content: space-around;
+    padding: 25px 0;
+    li {
+        color: $white;
+        font-weight: 400;
+        font-family: $mont-text;
+        @include font-size-value(14);
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        padding: 15px;
+            &:hover {
+                border: 1px solid $teal;
+                font-weight: 700;
+            }
+    }
+}

@@ -135,21 +135,148 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto; }
 
 .wrapper--inner {
-  max-width: 1000px;
-  margin: 0 auto; }
-
-.wrapper--footer-nav {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 html {
   font-size: 62.5%; }
 
-.testing-typed::after {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  border-radius: 0; }
+
+img {
+  max-width: 100%; }
+
+.button--green-filled {
+  color: white;
+  background: #1bbc9b;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 10px 40px; }
+  .button--green-filled:hover {
+    -webkit-box-shadow: 2px 2px 2px 2px #1e1e1e;
+            box-shadow: 2px 2px 2px 2px #1e1e1e; }
+
+.section--header-center {
+  text-align: center; }
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin: 0; }
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #565656; }
+
+.section--header-grey-line {
+  max-width: 100px;
+  height: 1px;
+  background: #a3a3a3;
+  margin: 0 auto; }
+
+.section--sub-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+.general-body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 26px;
+  color: #565656; }
+
+nav {
+  background: #1e1e1e;
+  padding: 1px; }
+
+.nav--logo {
+  width: 30%;
+  margin-top: 15px; }
+  .nav--logo img {
+    max-width: 20%; }
+
+.nav--list {
+  width: 70%; }
+
+.nav--flex-overall, .nav--flex-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav--flex-overall {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav--flex-list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px 0; }
+  .nav--flex-list li {
+    color: white;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 15px; }
+    .nav--flex-list li:hover {
+      border: 1px solid #1bbc9b;
+      font-weight: 700; }
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.6)), to(rgba(30, 30, 30, 0.6))), url(assets/header--background.jpeg);
+  background: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url(assets/header--background.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+  min-height: calc(100vh - 100px); }
+
+header h2, header h1 {
+  color: white;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif; }
+
+header h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+header h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin-top: 0;
+  margin-bottom: 40px; }
+
+.header--name {
+  color: #1bbc9b;
+  text-transform: uppercase; }
+
+.header--typed::after {
+  color: white;
   content: '|';
   display: inline;
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite; }
 
 @-webkit-keyframes blink {
   0% {
@@ -166,3 +293,29 @@ html {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.header--text-center {
+  margin-top: 30vh; }
+
+.section--about-me {
+  background: white; }
+
+.section--about-me-two-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.section--about-me-portrait {
+  max-width: 40%; }
+  .section--about-me-portrait img {
+    max-width: 460px;
+    max-height: 480px;
+    overflow: hidden; }
+
+.section-about-me--text {
+  max-width: 60%; }
+  .section-about-me--text .section--sub-heading {
+    font-weight: 600; }

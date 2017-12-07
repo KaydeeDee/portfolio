@@ -3,30 +3,21 @@
 
 $(function () {
 
-    // $(".typed").hide 
-    
-    // typed({
-    //     strings: ["First sentence.", " Second sentence."],
-    //     typeSpeed: 40,
-    //     loop: true
-    // })
-
-
     setTimeout(function () {
         $(".header--typed").typed({
             strings: ["a Web Developer.", "^222 an Avid Reader.", "^111 A Documentary Lover", "^111 Blah Blah", "^111 More Blah Blah"], // ^{number} denotes time in ms to wait
 
             // typing speed
-            typeSpeed: 120,
+            typeSpeed: 90,
 
             // time before typing starts
             startDelay: 0,
 
             // backspacing speed
-            backSpeed: 60,
+            backSpeed: 65,
 
             // time before backspacing
-            backDelay: 800,
+            backDelay: 900,
 
             // loop
             loop: true,

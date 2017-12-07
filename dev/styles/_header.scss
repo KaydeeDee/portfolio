@@ -1,0 +1,49 @@
+header {
+    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(assets/header--background.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+    min-height: calc(100vh - 100px);
+}
+
+header h2, header h1 {
+    color: $white;
+    margin-bottom: 15px;
+    font-family: $mont-text;
+}
+
+header {
+    h2 {
+    @include font-size-value(24);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+    h1 {
+        @include font-size-value(48);
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+}
+
+.header--name {
+    color: $teal;
+    text-transform: uppercase;
+}
+
+.header--typed::after {
+    color: $white;
+	content: '|';
+	display: inline;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.header--text-center {
+    margin-top: 30vh;
+}

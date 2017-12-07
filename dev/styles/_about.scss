@@ -1,0 +1,27 @@
+.section--about-me {
+    background: $white;
+}
+
+.section--about-me-two-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--about-me-portrait {
+    max-width: 40%;
+    img {
+    max-width: 460px;
+    max-height: 480px;
+    overflow: hidden;
+    }
+}
+
+.section-about-me--text {
+    max-width: 60%;
+    .section--sub-heading {
+        font-weight: 600; 
+    }
+}
+
+
+
