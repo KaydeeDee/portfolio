@@ -1,0 +1,57 @@
+.section--soft-skills {
+    background: darken($white, 5);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section--soft-skills-boxes-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section--soft-skills-boxes{
+    max-width: 45%;
+    margin-top: 20px;
+    i {
+        color: $teal;
+        @include font-size-value(22);
+        transform: rotate(-45deg);
+}
+
+    }
+
+.section--soft-skills-boxes-diag {
+    border: 1px solid $teal;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.section--soft-skills-boxes:hover {
+    .section--sub-heading {
+        color: $teal;
+    }
+    .section--soft-skills-boxes-diag {
+        background: $teal;
+        i {
+            color: $white;
+        }
+    }
+}
+
+.fa-clock-o {
+    padding: 1.5px;
+    padding-left: 2px;
+}
+
+.fa-lightbulb-o {
+    padding-top: 3.5px;
+    padding-left: 7px;
+    padding-bottom: 4.5px;
+}
+
+.fa-users {
+    padding-top: 1.1px;
+}

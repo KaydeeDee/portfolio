@@ -61,6 +61,7 @@ a {
     background: $teal;
     font-family: $ral-text;
     border: none;
+    border-radius: 0;
     @include font-size-value(18);
     padding: 10px 40px;
     &:hover {
@@ -108,7 +109,7 @@ h4 {
 
 // p settings 
 
-.general-body {
+.general-body, input, textarea {
     font-family: $ral-text;
     @include font-size-value(14);
     font-weight: 300;

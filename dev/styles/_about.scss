@@ -1,5 +1,7 @@
 .section--about-me {
     background: $white;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .section--about-me-two-col {
@@ -10,9 +12,8 @@
 .section--about-me-portrait {
     max-width: 40%;
     img {
-    width: 460px;
-    height: 480px;
-    overflow: hidden;
+    min-width: 420px;
+    max-height: 480px;
     }
 }
 

@@ -1,0 +1,23 @@
+footer {
+    padding: 10px 0;
+}
+.section--footer, .section--footer-side-by-side  {
+    display: flex;
+    justify-content: space-around;
+    p, a {
+        margin: 0;
+        color: $white;
+    }
+    a:hover {
+        font-weight: 500;
+    }
+}
+
+.wrapper--footer {
+    width: 320px;
+    margin: 0 auto;
+}
+
+
+
+
