@@ -25,10 +25,15 @@ $(function () {
     new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
-        offset: 0, // default
+        offset: 100,
         mobile: false,
         live: true // default
     }).init();
+
+    // Smooth scroll
+    $('a').smoothScroll({
+        speed: 1200
+    });
 });
 
 // appTotal.events = function () {}

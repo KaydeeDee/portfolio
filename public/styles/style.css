@@ -152,6 +152,9 @@ button {
 img {
   max-width: 100%; }
 
+a {
+  text-decoration: none; }
+
 .button--green-filled {
   color: white;
   background: #1bbc9b;
@@ -165,7 +168,9 @@ img {
             box-shadow: 2px 2px 2px 2px #1e1e1e; }
 
 .section--header-center {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -173,14 +178,17 @@ h3 {
   font-size: 3rem;
   font-weight: 500;
   color: #1e1e1e;
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 1.5px; }
 
 h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 300;
-  color: #565656; }
+  color: #565656;
+  margin-top: 5px;
+  margin-bottom: 15px; }
 
 .section--header-grey-line {
   max-width: 100px;
@@ -206,10 +214,12 @@ nav {
   padding: 1px; }
 
 .nav--logo {
-  width: 30%;
-  margin-top: 15px; }
+  width: 30%; }
   .nav--logo img {
-    max-width: 20%; }
+    max-width: 72px;
+    max-height: 72px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
 
 .nav--list {
   width: 70%; }
@@ -217,7 +227,12 @@ nav {
 .nav--flex-overall, .nav--flex-list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .nav--flex-overall {
   -webkit-box-pack: justify;
@@ -228,7 +243,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 25px 0; }
-  .nav--flex-list li {
+  .nav--flex-list li a {
     color: white;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
@@ -237,7 +252,7 @@ nav {
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 15px; }
-    .nav--flex-list li:hover {
+    .nav--flex-list li a:hover {
       border: 1px solid #1bbc9b;
       font-weight: 700; }
 
@@ -247,8 +262,9 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 1px;
-  min-height: calc(100vh - 100px); }
+  min-height: calc(100vh - 60px); }
 
 header h2, header h1 {
   color: white;
@@ -259,7 +275,8 @@ header h2 {
   font-size: 24px;
   font-size: 2.4rem;
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  letter-spacing: 1.5px; }
 
 header h1 {
   font-size: 48px;
@@ -297,6 +314,9 @@ header h1 {
 .header--text-center {
   margin-top: 30vh; }
 
+.fa-chevron-down {
+  color: white; }
+
 .section--about-me {
   background: white; }
 
@@ -311,16 +331,27 @@ header h1 {
 .section--about-me-portrait {
   max-width: 40%; }
   .section--about-me-portrait img {
-    max-width: 460px;
-    max-height: 480px;
+    width: 460px;
+    height: 480px;
     overflow: hidden; }
 
 .section-about-me--text {
   max-width: 60%; }
   .section-about-me--text .section--sub-heading {
     font-weight: 600; }
+  .section-about-me--text button {
+    margin-top: 10px; }
 
-.section--tech-skills-icons, .section--tech-skills-icons-back {
+.general-body span {
+  font-weight: 500; }
+
+.section--tech {
+  background: #fafafa;
+  padding: 1px;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.section--tech-skills-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +361,8 @@ header h1 {
       flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto; }
+  .section--tech-skills-icons div {
+    margin: 30px 15px; }
 
 .icons--first-square {
   width: 120px;
@@ -345,6 +378,16 @@ header h1 {
     color: white;
     background: #1bbc9b; }
 
+.devicon--border {
+  border: 1px solid #1bbc9b;
+  color: #1bbc9b;
+  padding: 15px;
+  font-size: 90px;
+  font-size: 9rem; }
+  .devicon--border:hover {
+    color: white;
+    background: #1bbc9b; }
+
 .section--portfolio-two-col-left, .section--portfolio-two-col-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,8 +397,11 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.section--portfolio-two-col-left {
+  text-align: right; }
+
 .section--portfolio-image {
-  max-width: 40%; }
+  max-width: 50%; }
 
 .section--portfolio-text-buttons {
   max-width: 50%; }

@@ -10,8 +10,8 @@
 .section--about-me-portrait {
     max-width: 40%;
     img {
-    max-width: 460px;
-    max-height: 480px;
+    width: 460px;
+    height: 480px;
     overflow: hidden;
     }
 }
@@ -21,6 +21,13 @@
     .section--sub-heading {
         font-weight: 600; 
     }
+    button {
+        margin-top: 10px;
+    }
+}
+
+.general-body span {
+    font-weight: 500;
 }
 
 

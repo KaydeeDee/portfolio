@@ -1,9 +1,19 @@
-.section--tech-skills-icons, .section--tech-skills-icons-back {
+.section--tech {
+    background: darken($white, 2);
+    padding: 1px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.section--tech-skills-icons {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
+    div {
+        margin: 30px 15px;
+    }
 }
 
 .icons--first-square {
@@ -14,6 +24,17 @@
     padding-top: 2%;
     margin: 20px;
     color: $teal;
+    @include font-size-value(90);
+    &:hover {
+        color: white;
+        background: $teal;
+    }
+}
+
+.devicon--border {
+    border: 1px solid $teal;
+    color: $teal;
+    padding: 15px;
     @include font-size-value(90);
     &:hover {
         color: white;

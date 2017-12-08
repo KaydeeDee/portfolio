@@ -50,6 +50,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 // buttons
 
 .button--green-filled {
@@ -68,6 +72,8 @@ img {
 
 .section--header-center {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -76,6 +82,7 @@ h3 {
     font-weight: 500;
     color: $black;
     margin: 0;
+    letter-spacing: 1.5px;
 }
 
 h4 {
@@ -83,6 +90,8 @@ h4 {
     @include font-size-value(14);
     font-weight: 300;
     color: $grey;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .section--header-grey-line {

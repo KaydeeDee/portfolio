@@ -5,9 +5,10 @@ nav {
 
 .nav--logo {
     width: 30%;
-    margin-top: 15px;
     img {
-        max-width: 20%;
+        max-width: 72px;
+        max-height: 72px;
+        flex-shrink: 0;
     }
 }
 
@@ -17,6 +18,8 @@ nav {
 
 .nav--flex-overall, .nav--flex-list {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav--flex-overall {
@@ -26,7 +29,7 @@ nav {
 .nav--flex-list {
     justify-content: space-around;
     padding: 25px 0;
-    li {
+    li a {
         color: $white;
         font-weight: 400;
         font-family: $mont-text;

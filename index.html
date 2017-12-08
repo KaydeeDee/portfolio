@@ -16,18 +16,19 @@
 <body>
 	<main class="wrapper--max">
 		<!-- start of nav -->
-		<nav>
+		<nav id="home">
 			<div class="wrapper--inner nav--flex-overall">
 				<div class="nav--logo">
-					<img src="public/styles/assets/KDlogo_square.png" alt="Katie D'Angelo Logo that is the letter K and D">
+					<img src="public/styles/assets/KDlogo_letters.png" alt="Katie D'Angelo Logo that is the letter K and D">
 				</div>
 				<div class="nav--list">
 					<ul class="nav--flex-list">
-						<li>home</li>
-						<li>about</li>
-						<li>skills</li>
-						<li>portfolio</li>
-						<li>contact</li>
+						<li><a href="#home">home</a></li>
+						<li> <a href="#toAbout">about</a></li>
+						<li><a href="#toTechTools">tech toolbox</a></li>
+						<li><a href="#toPortfolio">portfolio</a></li>
+						<li><a href="#toSoftSkills">soft skills</a></li>
+						<li><a href="#toContact">contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -39,17 +40,17 @@
 				<div class="header--text-center">
 					<h2>Hi, I'm <span class="header--name">Katie!</span></h2>
 					<h1>I'm <span class="header--typed"></span></h1>
-					<button class="button--green-filled">Contact Me</button>
+					<a href="#toContact"class="button--green-filled">Contact Me</a>
 				</div>
 			</div>
 		</header>
 		<!-- end of header -->
-		<section class="section--about-me">
+		<section class="section--about-me" id="toAbout">
 			<div class="wrapper--inner">
-				<div class="section--header-center">
-					<h3 class= "wow slideInLeft data-wow-duration="5s" ">About Me</h3>
-					<h4 class = "wow slideInRight data-wow-duration="5s" ">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
-					<div class="section--header-grey-line wow slideInLeft data-wow-duration="5s" "></div>
+				<div class="section--header-center wow slideInLeft data-wow-duration="5s" ">
+					<h3>About Me</h3>
+					<h4>Learn a little more about me and the work that I do</h4>
+					<div class="section--header-grey-line"></div>
 				</div>
 				<div class="section--about-me-two-col">
 					<div class="section--about-me-portrait">
@@ -57,38 +58,43 @@
 					</div>
 					<div class="section-about-me--text">
 						<p class="section--sub-heading">I'm Katie, and I'm a Web Developer.</p>
-						<p class= "general-body">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa
-						cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root
-						water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels
-						sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya
-						nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+						<p class= "general-body">I'm a natural problem solver
+						who isn't scared of a challenge and am a firm believer that being able to laugh at yourself makes any project possible. </p>
+						<p class= "general-body">I'm
+						a "big picture"​ thinker who is able to see problems before they happen, leading to balanced, complete, responsive, projects in web development
+						and digital outreach. Web development is my specialty, but working with people for people is what I do best. <span>I believe in
+						working towards greater digital access for all, the passion and dedication of small teams, the unlimited potential of technology,
+						and the power of a good cup of coffee.</span> </p> 
+						<p class= "general-body">When I'm not working, you can find me on Reddit, cooking, playing games (WoW, Super Smash
+						Brothers, Bioshock et al.), and reading, usually in that order.</p>
+						<p class= "general-body">I'm a recent HackerYou Grad and have a B.A from the University of Toronto and am currently based out of Toronto.</p>
 						<button class="button--green-filled">Download Resume</button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="section--tech"id="toTechTools">
 			<div class="wrapper--inner">
-				<div class="section--header-center">
+				<div class="section--header-center wow slideInRight data-wow-duration="5s"">
 					<h3>Tech Skills</h3>
 					<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
 					<div class="section--header-grey-line"></div>
 				</div>
 				<div class="section--tech-skills-icons">
-					<div class="icons--first-square"><i class="devicon-sass-original"></i></div>
-					<div class="icons--first-square"><i class="devicon-gulp-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-javascript-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-react-original"></i></div>
-					<div class="icons--first-square"><i class="devicon-css3-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-git-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-html5-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-github-plain"></i></div>
-					<div class="icons--first-square"><i class="devicon-visualstudio-plain"></i></div>
+					<div><i class="devicon-sass-original devicon--border"></i></div>
+					<div><i class="devicon-gulp-plain devicon--border"></i></div>
+					<div><i class="devicon-javascript-plain devicon--border"></i></div>
+					<div><i class="devicon-react-original devicon--border"></i></div>
+					<div><i class="devicon-css3-plain devicon--border"></i></div>
+					<div><i class="devicon-git-plain devicon--border"></i></div>
+					<div><i class="devicon-html5-plain devicon--border"></i></div>
+					<div><i class="devicon-github-plain devicon--border"></i></div>
+					<div><i class="devicon-visualstudio-plain devicon--border"></i></div>
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="section--header-center">
+		<section id="toPortfolio">
+			<div class="section--header-center wow slideInLeft data-wow-duration="5s"">
 				<h3>Portfolio</h3>
 				<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
 				<div class="section--header-grey-line"></div>
@@ -96,7 +102,7 @@
 			<div class="wrapper--inner">
 				<div class="section--portfolio-two-col-left">
 					<div class="section--portfolio-image">
-						<img src="https://dummyimage.com/650x500/000/fff" alt="">
+						<img src="https://dummyimage.com/500x400/000/fff" alt="">
 					</div>
 					<div class="section--portfolio-text-buttons">
 						<p class="section--sub-heading">The Awkward Party Goer</p>
@@ -104,7 +110,8 @@
 						leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 						pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 						<div class="section--portfolio-buttons">
-							<button class="button--green-filled">See Live</button>
+							<a href="http://katiecodes.ca/TheAwkwardPartyGoer/" target="
+							_blank"class="button--green-filled">See Live</a>
 							<button class="button--green-filled">GitHub</button>
 						</div>
 					</div>
@@ -156,8 +163,8 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="section--header-center">
+		<section id="toSoftSkills">
+			<div class="section--header-center wow slideInRight data-wow-duration="5s"">
 				<h3>Soft Skills</h3>
 				<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
 				<div class="section--header-grey-line"></div>
@@ -170,24 +177,24 @@
 				<div></div>
 			</div>
 		</section>
-		<section>
-			<div class="section--header-center">
+		<section id="toContact">
+			<div class="section--header-center wow slideInLeft data-wow-duration="5s"">
 				<h3>Contact Me</h3>
 				<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
 				<div class="section--header-grey-line"></div>
 			</div>
 			<form action="https://formspree.io/hello@katiecodes.ca" method="POST">
 				<input type="text" name="name" placeholder="Your Name">
-				<input type="text" name="body" placeholder="You message">
 				<input type="email" name="_replyto" placeholder="Your Email">
+				<input type="text" name="body" placeholder="Your message">
 				<input type="submit" value="Send">
 			</form>
 		</section>
 		<footer>
 		</footer>
 	</main>
-	<script src='https://code.jquery.com/jquery-3.2.1.min.js'integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 	<script src="https://use.fontawesome.com/863f28bd20.js"></script>
 	<script src="./dev/scripts/typed.min.js"></script>
 	<script src="./dev/scripts/wow.min.js"></script>
