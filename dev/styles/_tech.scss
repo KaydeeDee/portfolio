@@ -9,25 +9,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     div {
         margin: 30px 15px;
-    }
-}
-
-.icons--first-square {
-    width: 120px;
-    height: 120px;
-    border: 1px solid $teal;
-    padding-left: 1.7%;
-    padding-top: 2%;
-    margin: 20px;
-    color: $teal;
-    @include font-size-value(90);
-    &:hover {
-        color: white;
-        background: $teal;
     }
 }
 
@@ -37,9 +22,7 @@
     padding: 15px;
     @include font-size-value(90);
     &:hover {
-        color: white;
+        color: $white;
         background: $teal;
     }
 }
-
-

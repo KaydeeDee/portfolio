@@ -361,24 +361,10 @@ header h1 {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto; }
   .section--tech-skills-icons div {
     margin: 30px 15px; }
-
-.icons--first-square {
-  width: 120px;
-  height: 120px;
-  border: 1px solid #1bbc9b;
-  padding-left: 1.7%;
-  padding-top: 2%;
-  margin: 20px;
-  color: #1bbc9b;
-  font-size: 90px;
-  font-size: 9rem; }
-  .icons--first-square:hover {
-    color: white;
-    background: #1bbc9b; }
 
 .devicon--border {
   border: 1px solid #1bbc9b;
@@ -496,7 +482,7 @@ input, textarea {
 .form--name {
   margin-right: 20px; }
 
-input[type=submit] {
+button {
   margin-top: 20px; }
 
 textarea {
@@ -507,6 +493,9 @@ textarea {
   margin-top: 20px;
   padding-top: 20px;
   overflow-y: scroll; }
+
+.section--contact-form img {
+  max-width: 17px; }
 
 footer {
   padding: 10px 0; }

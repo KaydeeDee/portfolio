@@ -24,7 +24,7 @@ input, textarea {
     margin-right: 20px;
 }
 
-input[type=submit] {
+button {
     margin-top: 20px;
 }
 
@@ -36,4 +36,10 @@ textarea {
     margin-top: 20px;
     padding-top: 20px;
     overflow-y: scroll;
+}
+
+.section--contact-form {
+    img {
+        max-width: 17px;
+    }
 }

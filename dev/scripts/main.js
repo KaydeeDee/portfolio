@@ -20,7 +20,6 @@ $(function () {
         })
     })
 
-
     new WOW(
         {
             boxClass: 'wow',    
