@@ -6,8 +6,15 @@
 .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     display: flex; 
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-bottom: 30px;
+}
+
+.section--portfolio-two-col-left {
+    flex-wrap: wrap;
+}
+
+.section--portfolio-two-col-right {
+    flex-wrap: wrap-reverse;
 }
 
 .section--portfolio-two-col-left {
@@ -56,6 +63,18 @@
     width: 24px;
 }
 
-.section--portfolio-icons-leaf {
+.section--portfolio-icons-leaf,.section--portfolio-icons-animal {
     width: 31px;
+}
+
+.section--portfolio-icons-animal {
+    vertical-align: bottom;
+}
+
+// media queries
+
+@media (max-width: 720px) { 
+    .section--portfolio-image {
+        margin-top: 20px;
+    }
 }

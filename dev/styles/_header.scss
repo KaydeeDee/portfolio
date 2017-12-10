@@ -1,5 +1,5 @@
 header {
-    background: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)), url(assets/header--background.jpg);
+    background: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)), url(assets/header--background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,3 +64,11 @@ header {
     }
 }
 
+
+// media queries
+
+@media (max-width: 1167px) { 
+    header h1, header h2, header a {
+    margin-left: 35px;
+    }
+}

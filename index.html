@@ -15,6 +15,7 @@
 <!-- Background header photo by Lukas from Pexels -->
 <!-- Balloon by Adreine from the Noun Project -->
 <!-- Maple Leaf by Viktor Ostrovsky from the Noun Project -->
+<!-- Animals in Bathtub by Becris from the Noun Project -->
 <body>
 	<main class="wrapper--max">
 		<!-- start of nav -->
@@ -29,8 +30,34 @@
 						<li> <a href="#toAbout">about</a></li>
 						<li><a href="#toTechTools">tech toolbox</a></li>
 						<li><a href="#toPortfolio">portfolio</a></li>
-						<li><a href="#toSoftSkills">soft skills</a></li>
+						<li><a href="#toSoftSkills">essential skills</a></li>
 						<li><a href="#toContact">contact</a></li>
+					</ul>
+				</div>
+				<div id="menuToggle">
+					<input type="checkbox" >
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<li>
+							<a href="#home">home</a>
+						</li>
+						<li>
+							<a href="#toAbout">about</a>
+						</li>
+						<li>
+							<a href="#toTechTools">tech toolbox</a>
+						</li>
+						<li>
+							<a href="#toPortfolio">portfolio</a>
+						</li>
+						<li>
+							<a href="#toSoftSkills">essential skills</a>
+						</li>
+						<li>
+							<a href="#toContact">contact</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -72,7 +99,7 @@
 						<p class= "general-body">When I'm not working, you can find me on Reddit, cooking, playing games (WoW, Super Smash
 						Brothers, Bioshock et al.), and reading, usually in that order.</p>
 						<p class= "general-body">I'm a recent HackerYou Immersive Grad. have a B.A from the University of Toronto and am currently based out of Toronto.</p>
-						<button class="button--green-filled">Download Resume</button>
+						<button class="button--green-filled">View My Resume</button>
 					</div>
 				</div>
 			</div>
@@ -82,8 +109,8 @@
 		<section class="section--tech"id="toTechTools">
 			<div class="wrapper--inner">
 				<div class="section--header-center wow slideInRight data-wow-duration="5s"">
-					<h3>Tech Skills</h3>
-					<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
+					<h3>Tech Toolbox</h3>
+					<h4>I'm learning more every day, but here are the tools I'm currently comfortable with! You can see them in action in my portfolio section below.</h4>
 					<div class="section--header-grey-line"></div>
 				</div>
 				<div class="section--tech-skills-icons">
@@ -125,7 +152,7 @@
 		<section id="toPortfolio" class="section--portfolio-background">
 			<div class="section--header-center wow slideInLeft data-wow-duration="5s"">
 				<h3>Portfolio</h3>
-				<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
+				<h4>Here are the look at the projects I've completed. Feel free to contact me if you have any questions about them!</h4>
 				<div class="section--header-grey-line"></div>
 			</div>
 			<div class="wrapper--inner">
@@ -164,15 +191,13 @@
 				</div>
 				<div class="section--portfolio-two-col-left">
 					<div class="section--portfolio-image">
-						<img src="https://dummyimage.com/650x500/000/fff" alt="">
+						<img src="public/styles/assets/life--laptop.png" alt="A computer and an iPad with previews of Life List website on both of their screens">
 					</div>
 					<div class="section--portfolio-text-buttons">
 						<p class="section--sub-heading section--portfolio-headings-in-boxes">Life List  <i class="fa fa-thumb-tack" aria-hidden="true"></i></p>
-						<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-						leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-						pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+						<p class="general-body">Using Firebase and React, Life List helps users keep track of their busy lives. After logging in, users are able to create lists and add to them, with other users being able to contribute to them as well. It's a perfect app to help organize the next family potluck or organize a party!</p>
 						<p class="general-body section--portfolio-text-used">
-							<span class="section--portfolio-bold">Used:</span> React, HTML5, CSS, Sass, Responsive Design, Firebase, Accessible Design.
+							<span class="section--portfolio-bold">Used:</span> React, Gulp, HTML5, CSS, Sass, Responsive Design, Firebase, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="http://katiecodes.ca/lifelist/" target=" _blank" class="button--green-filled section--portfolio-button-margin-right">See Live</a>
@@ -182,12 +207,10 @@
 				</div>
 				<div class="section--portfolio-two-col-right">
 					<div class="section--portfolio-text-buttons">
-						<p class="section--sub-heading section--portfolio-headings-in-boxes">Purrrfect Pets</p>
-						<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-						leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-						pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+						<p class="section--sub-heading section--portfolio-headings-in-boxes">Purrrfect Friends <img src="public/styles/assets/pup_kitten_logo.png" alt="Icon that has a cartoon cat and dog in a bathtub together" class="section--portfolio-icons-animal"></p>
+						<p class="general-body">Using the PetFinder API, Firecase and React, Purrfect Friends helps connect users with cats and dogs in their area that are up for adoption, based on their area and perferences. Once logged in with GMail Authentication, users get a completely personlized experience where they can save pets they're interested in to their profile where they're saved for later viewing. Find your next furrever friend today!</p>
 						<p class="general-body section--portfolio-text-used">
-							<span class="section--portfolio-bold">Used:</span> React, Firebase, HTML5, CSS, Sass, Responsive Design, API, Accessible Design.
+							<span class="section--portfolio-bold">Used:</span> React, Gulp, Firebase, HTML5, CSS, Sass, Responsive Design, API, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="https://project-six-3b01e.firebaseapp.com/" target=" _blank" class="button--green-filled section--portfolio-button-margin-right">See Live</a>
@@ -195,7 +218,7 @@
 						</div>
 					</div>
 					<div class="section--portfolio-image">
-						<img src="https://dummyimage.com/650x500/000/fff" alt="">
+						<img src="public/styles/assets/purrfect--laptop.png" alt="A computer and an iPad with previews of Purrfect Friends website on both of their screens">
 					</div>
 				</div>
 			</div>
@@ -204,38 +227,31 @@
 		<!-- start of soft skills section -->
 		<section id="toSoftSkills" class="section--soft-skills">
 			<div class="section--header-center wow slideInRight data-wow-duration="5s"">
-				<h3>Soft Skills</h3>
-				<h4>I have over 7 years of professional working experience that help me a well-rounded developer</h4>
+				<h3>Essential Skills</h3>
+				<h4>I have over 7 years of professional working experience that help make me a well-rounded developer</h4>
 				<div class="section--header-grey-line"></div>
 			</div>
 			<div class="wrapper--inner section--soft-skills-boxes-flex">
 				<div class="section--soft-skills-boxes">
 					<div class="section--soft-skills-boxes-diag"><i class="fa fa-users" aria-hidden="true"></i></div>
-					<p class="section--sub-heading">Working in teams</p>
-					<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+					<p class="section--sub-heading">Working in Teams</p>
+					<p class="general-body">Having worked with extremely fast paced collaborative teams and very independent larger teams, I'm able to adapt and pivot my approaches to meet the goals of my team. I understand that communication is key to any team and am able to bring new perspectives to every team I'm a part of.</p>
 				</div>
 				<div class="section--soft-skills-boxes">
 					<div class="section--soft-skills-boxes-diag"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
-					<p class="section--sub-heading">Managing tight and competing deadlines</p>
-					<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+					<p class="section--sub-heading">Managing Tight and Competing Deadlines</p>
+					<p class="general-body">During peak season or in the planning phases of projects, I am able to manage multiple deadlines without having to compromise the quality of my work. I'm a "big picture" thinker, and future proof my work as I go.</p>
 				</div>
 				<div class="section--soft-skills-boxes">
 					<div class="section--soft-skills-boxes-diag"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-					<p class="section--sub-heading">Learning new software and problem solving</p>
-					<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+					<p class="section--sub-heading">Learning New Software and Problem Solving</p>
+					<p class="general-body">I'm an extremely fast learner and love working through problems.</p>
 				</div>
 				<div class="section--soft-skills-boxes">
 					<div class="section--soft-skills-boxes-diag"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
 					<p class="section--sub-heading">Working directly with clients</p>
-					<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
-					leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
-					pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+					<p class="general-body">Using the PetFinder API, Firecase and React, Purrfect Friends helps connect users with cats and dogs in their area that are
+					up for adoption, based on their area and perferences. Once logged in with GMail Authentication, users get a completely personlized.</p>
 				</div>
 			</div>
 		</section>
@@ -250,33 +266,33 @@
 			<div class="wrapper--inner section--contact-form">
 				<form action="https://formspree.io/hello@katiecodes.ca" method="POST">
 					<div class="section--contact-form-name-email">
-						<input type="text" name="name" placeholder="Your Name" class="section--contact-form-top form--name" required="true">
-						<input type="email" name="_replyto" placeholder="Your Email" class="section--contact-form-top" required="true">
+						<input type="text" name="name" placeholder="Your name" class="section--contact-form-top form--name" required="true">
+						<input type="email" name="_replyto" placeholder="Your email address" class="section--contact-form-top form--email" required="true">
 					</div>
-					<textarea name="text" wrap="soft" class="section--contact-form-message" placeholder="Your message" required="true"></textarea>
+					<textarea name="text" wrap="soft" class="section--contact-form-message" placeholder="How can we work together?" required="true"></textarea>
 
 					<button type="submit" value="Send Message" class="button--green-filled">Send Message <img src="public/styles/assets/envlope.png" alt="Envelope icon"></button>
 				</form>
 			</div>
 			<div class="section--contact-social">
 				<div class="section--contact-social-icons">
-					<div><a href="https://twitter.com/Kate_DAngelo"><span class="fa-stack fa-lg fa-3x">
+					<div><a href="https://twitter.com/Kate_DAngelo" target="_blank"><span class="fa-stack fa-lg fa-3x">
 						<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
 						<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 					</span></a></div>
 
-					<div><a href="https://www.linkedin.com/in/katiedangelo/"><span class="fa-stack fa-lg fa-3x">
+					<div><a href="https://www.linkedin.com/in/katiedangelo/" target="_blank"><span class="fa-stack fa-lg fa-3x">
 						<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
 					</span></a></div>
 
-					<div><a href="https://medium.com/@kd.dangelo"><span class="fa-stack fa-lg fa-3x">
+					<div><a href="https://medium.com/@kd.dangelo" target="_blank"><span class="fa-stack fa-lg fa-3x">
 						<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
 						<i class="fa fa-medium fa-stack-1x fa-inverse" aria-hidden="true"></i>
 					</span></a></div>
 				</div>
 				<div>
-					<p>hello@<span style="display:none">foo</span>katie<span style="display:none">no bots for me</span>codes.ca</p>
+					<p>hello@<span class="anti-bot">foo</span>katie<span class="anti-bot">no bots for me</span>codes.ca</p>
 				</div>
 			</div>
 		</section>

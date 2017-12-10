@@ -59,6 +59,9 @@ textarea {
 
 .section--contact-social-icons{
     display: flex;
+    a {
+        max-width: 6px;
+    }
 }
 
 .fa-circle {
@@ -76,4 +79,37 @@ textarea {
 
 .fa-stack  {
     margin: 0 5px;
+}
+
+// media queries
+
+@media (max-width: 720px) {  
+    .section--contact-form-name-email {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form--name {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .form--email {
+        margin-right: 20px;
+        
+    }
+    .form--name, .form--email {
+        min-width: 292px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .section--contact-form button {
+        width: 225px;
+        height: 41px;
+        margin: 20px auto;
+    }
+    textarea {
+        min-height: 260px;
+        min-width: 378px;
+    }
 }

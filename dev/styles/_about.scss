@@ -13,13 +13,13 @@
 .section--about-me-portrait {
     max-width: 480px;
     img {
-    max-width: 420px;
+    max-width: 410px;
     max-height: 480px;
     }
 }
 
 .section-about-me--text {
-    max-width: 730px;
+    max-width: 720px;
     .section--sub-heading {
         font-weight: 600; 
     }
@@ -30,6 +30,17 @@
 
 .general-body span {
     font-weight: 500;
+}
+
+// media queries
+
+@media (max-width: 730px) { 
+    .section-about-me--text  {
+        max-width: 640px;
+    }
+    .section--about-me-portrait {
+        margin-top: 10px;
+    }
 }
 
 

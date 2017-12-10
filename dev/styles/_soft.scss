@@ -1,5 +1,5 @@
 .section--soft-skills {
-    background: darken($white, 5);
+    background: lighten($lightgrey, 12);
     padding-top: 6vh;
     padding-bottom: 6vh;
 }
@@ -10,14 +10,14 @@
     flex-wrap: wrap;
 }
 .section--soft-skills-boxes{
-    max-width: 45%;
+    max-width: 500px;
+    max-height: 230px;
     margin-top: 20px;
     i {
         color: $teal;
         @include font-size-value(22);
         transform: rotate(-45deg);
 }
-
     }
 
 .section--soft-skills-boxes-diag {
