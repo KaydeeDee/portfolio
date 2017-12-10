@@ -1,6 +1,6 @@
 .section--contact-me {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 .section--contact-form, .section--contact-form-name-email{
     display: flex;
@@ -42,4 +42,37 @@ textarea {
     img {
         max-width: 17px;
     }
+}
+
+.section--contact-social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+        color: $teal;
+        @include font-size-value(18);
+        font-family: $ral-text;
+        margin: 10px;
+    }
+}
+
+.section--contact-social-icons{
+    display: flex;
+}
+
+.fa-circle {
+    color: $teal;
+}
+
+.fa-stack:hover {
+    .fa-circle {
+        color: $white;
+    }
+    .fa-stack-1x {
+        color: $teal;
+    }
+}
+
+.fa-stack  {
+    margin: 0 5px;
 }

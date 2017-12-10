@@ -334,9 +334,10 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .section--about-me-portrait {
   max-width: 480px; }
@@ -432,7 +433,7 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.section--portfolio-button-margin {
+.section--portfolio-button-margin-right {
   margin-right: 10px; }
 
 .section--portfolio-bold {
@@ -452,8 +453,8 @@ header h1 {
 
 .section--soft-skills {
   background: #f2f2f2;
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .section--soft-skills-boxes-flex {
   display: -webkit-box;
@@ -504,8 +505,8 @@ header h1 {
   padding-top: 1.1px; }
 
 .section--contact-me {
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .section--contact-form, .section--contact-form-name-email {
   display: -webkit-box;
@@ -542,6 +543,41 @@ textarea {
 
 .section--contact-form img {
   max-width: 17px; }
+
+.section--contact-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .section--contact-social p {
+    color: #1bbc9b;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "Raleway", sans-serif;
+    margin: 10px; }
+
+.section--contact-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fa-circle {
+  color: #1bbc9b; }
+
+.fa-stack:hover .fa-circle {
+  color: white; }
+
+.fa-stack:hover .fa-stack-1x {
+  color: #1bbc9b; }
+
+.fa-stack {
+  margin: 0 5px; }
 
 footer {
   padding: 10px 0; }
