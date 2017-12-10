@@ -40,10 +40,10 @@ header {
     animation: blink 1s infinite;
 }
 
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .header--text-center {
@@ -53,3 +53,14 @@ header {
 .fa-chevron-down {
     color: $white;
 }
+
+.header--white-arrow {
+    margin-left: 50%;
+    margin-top: 25vh;
+    display: inline-block;
+    text-align: center;
+    img {
+    max-width: 45px;
+    }
+}
+

@@ -8,7 +8,6 @@ $black: rgb(30, 30, 30);
 $teal: rgb(27, 188, 155);
 $forest: rgb(38, 132, 96);
 $grey: rgb(86, 86, 86);
-$lighter-grey: rgb(161, 161, 161);
 
 // mixins
 
@@ -19,7 +18,7 @@ $lighter-grey: rgb(161, 161, 161);
 
 // wrappers
 .wrapper--max {
-    max-width: 1900px;
+    max-width: 2500px;
     margin: 0 auto;
 }
 
@@ -73,7 +72,6 @@ a {
 
 .section--header-center {
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 20px;
 }
 

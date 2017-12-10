@@ -1,7 +1,13 @@
+.section--portfolio-background {
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
 .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .section--portfolio-two-col-left {
@@ -9,18 +15,47 @@
 }
 
 .section--portfolio-image {
-    max-width: 50%;
+    max-width: 550px;
+    max-height: 400px;
+}
+
+.section--portfolio-headings-in-boxes{
+    margin: 30px 0;
 }
 
 .section--portfolio-text-buttons {
-    max-width: 50%;
+    max-width: 565px;
+    max-height: 400px;
 }
 
 .section--portfolio-button {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.section--portfolio-button-margin {
+    margin-right: 10px;
 }
 
 .section--portfolio-bold {
     font-weight: 500;
+}
+
+.section--portfolio-text-used {
+    margin: 25px 0;
+}
+
+// icons in titles of protfolio peices
+
+.section--portfolio-icons-balloon, .section--portfolio-icons-leaf {
+    vertical-align: top;
+}
+
+.section--portfolio-icons-balloon {
+    width: 24px;
+}
+
+.section--portfolio-icons-leaf {
+    width: 31px;
 }

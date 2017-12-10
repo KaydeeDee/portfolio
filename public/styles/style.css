@@ -131,7 +131,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .wrapper--max {
-  max-width: 1900px;
+  max-width: 2500px;
   margin: 0 auto; }
 
 .wrapper--inner {
@@ -170,7 +170,6 @@ a {
 
 .section--header-center {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 20px; }
 
 h3 {
@@ -318,10 +317,18 @@ header h1 {
 .fa-chevron-down {
   color: white; }
 
+.header--white-arrow {
+  margin-left: 50%;
+  margin-top: 25vh;
+  display: inline-block;
+  text-align: center; }
+  .header--white-arrow img {
+    max-width: 45px; }
+
 .section--about-me {
   background: white;
-  padding-top: 30px;
-  padding-bottom: 40px; }
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .section--about-me-two-col {
   display: -webkit-box;
@@ -332,13 +339,13 @@ header h1 {
           justify-content: space-between; }
 
 .section--about-me-portrait {
-  max-width: 40%; }
+  max-width: 480px; }
   .section--about-me-portrait img {
-    min-width: 420px;
+    max-width: 420px;
     max-height: 480px; }
 
 .section-about-me--text {
-  max-width: 60%; }
+  max-width: 730px; }
   .section-about-me--text .section--sub-heading {
     font-weight: 600; }
   .section-about-me--text button {
@@ -348,10 +355,10 @@ header h1 {
   font-weight: 500; }
 
 .section--tech {
-  background: #fafafa;
+  background: #f7f7f7;
   padding: 1px;
-  padding-top: 20px;
-  padding-bottom: 40px; }
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .section--tech-skills-icons {
   display: -webkit-box;
@@ -364,17 +371,35 @@ header h1 {
   max-width: 850px;
   margin: 0 auto; }
   .section--tech-skills-icons div {
-    margin: 30px 15px; }
+    margin: 20px 10px; }
+  .section--tech-skills-icons p {
+    text-align: center;
+    font-weight: 400; }
 
 .devicon--border {
   border: 1px solid #1bbc9b;
   color: #1bbc9b;
   padding: 15px;
   font-size: 90px;
-  font-size: 9rem; }
+  font-size: 9rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
   .devicon--border:hover {
     color: white;
     background: #1bbc9b; }
+
+.section--techs-skills-hover p {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: "Montserrat", sans-serif; }
+
+.section--techs-skills-hover:hover p {
+  color: #1bbc9b;
+  font-weight: 500; }
+
+.section--portfolio-background {
+  padding-top: 6vh;
+  padding-bottom: 6vh; }
 
 .section--portfolio-two-col-left, .section--portfolio-two-col-right {
   display: -webkit-box;
@@ -383,16 +408,22 @@ header h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 30px; }
 
 .section--portfolio-two-col-left {
   text-align: right; }
 
 .section--portfolio-image {
-  max-width: 50%; }
+  max-width: 550px;
+  max-height: 400px; }
+
+.section--portfolio-headings-in-boxes {
+  margin: 30px 0; }
 
 .section--portfolio-text-buttons {
-  max-width: 50%; }
+  max-width: 565px;
+  max-height: 400px; }
 
 .section--portfolio-button {
   display: -webkit-box;
@@ -401,8 +432,23 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.section--portfolio-button-margin {
+  margin-right: 10px; }
+
 .section--portfolio-bold {
   font-weight: 500; }
+
+.section--portfolio-text-used {
+  margin: 25px 0; }
+
+.section--portfolio-icons-balloon, .section--portfolio-icons-leaf {
+  vertical-align: top; }
+
+.section--portfolio-icons-balloon {
+  width: 24px; }
+
+.section--portfolio-icons-leaf {
+  width: 31px; }
 
 .section--soft-skills {
   background: #f2f2f2;

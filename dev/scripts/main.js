@@ -1,11 +1,8 @@
-// const appTotal = {};
-
-
 $(function () {
 
     setTimeout(function () {
         $(".header--typed").typed({
-            strings: ["a Web Developer.", "^222 an Avid Reader.", "^111 A Documentary Lover", "^111 Blah Blah", "^111 More Blah Blah"], 
+            strings: ["a Web Developer.", "^222 an avid reader.", "^111 a huge documentary fan.", "^111 based in Toronto.", "^111 a black coffee drinker."], 
             typeSpeed: 90,
             startDelay: 0,
             backSpeed: 65,
@@ -26,9 +23,9 @@ $(function () {
             animateClass: 'animated', 
             offset: 100,          
             mobile: false,       
-            live: true        // default
+            live: true  
         }
-    ).init();
+        ).init();
 
     // Smooth scroll
     $('a').smoothScroll({
@@ -36,9 +33,4 @@ $(function () {
     });
 
 });
-
-
-
-
-// appTotal.events = function () {}
 

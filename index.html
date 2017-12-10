@@ -13,6 +13,8 @@
 </head>
 <!-- typed.js package by Matt Boldt -->
 <!-- Background header photo by Lukas from Pexels -->
+<!-- Balloon by Adreine from the Noun Project -->
+<!-- Maple Leaf by Viktor Ostrovsky from the Noun Project -->
 <body>
 	<main class="wrapper--max">
 		<!-- start of nav -->
@@ -42,9 +44,11 @@
 					<h1>I'm <span class="header--typed"></span></h1>
 					<a href="#toContact"class="button--green-filled">Contact Me</a>
 				</div>
+				<a href="#toAbout" class="header--white-arrow"><img src="public/styles/assets/white-arrow.png" alt="white chevron pointing down. Click on it to move to the next window." class="animated bounce"></a>
 			</div>
 		</header>
 		<!-- end of header -->
+		<!-- start of about me section -->
 		<section class="section--about-me" id="toAbout">
 			<div class="wrapper--inner">
 				<div class="section--header-center wow slideInLeft data-wow-duration="5s" ">
@@ -67,11 +71,13 @@
 						and the power of a good cup of coffee.</span> </p> 
 						<p class= "general-body">When I'm not working, you can find me on Reddit, cooking, playing games (WoW, Super Smash
 						Brothers, Bioshock et al.), and reading, usually in that order.</p>
-						<p class= "general-body">I'm a recent HackerYou Grad and have a B.A from the University of Toronto and am currently based out of Toronto.</p>
+						<p class= "general-body">I'm a recent HackerYou Immersive Grad. have a B.A from the University of Toronto and am currently based out of Toronto.</p>
 						<button class="button--green-filled">Download Resume</button>
 					</div>
 				</div>
 			</div>
+		<!-- end of about me section -->
+		<!-- start of tech toolkit section -->
 		</section>
 		<section class="section--tech"id="toTechTools">
 			<div class="wrapper--inner">
@@ -81,20 +87,42 @@
 					<div class="section--header-grey-line"></div>
 				</div>
 				<div class="section--tech-skills-icons">
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-sass-original devicon--border"></i></div>
+					<p class="general-body">Sass</p></div>
+					<div class="section--techs-skills-hover"> 
 					<div><i class="devicon-gulp-plain devicon--border"></i></div>
+					<p class="general-body">Gulp</p> </div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-javascript-plain devicon--border"></i></div>
+					<p class="general-body">JavaScript</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-react-original devicon--border"></i></div>
+					<p class="general-body">React</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-css3-plain devicon--border"></i></div>
+					<p class="general-body">CSS</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-git-plain devicon--border"></i></div>
+					<p class="general-body">Git</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-html5-plain devicon--border"></i></div>
+					<p class="general-body">HTML5</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-github-plain devicon--border"></i></div>
+					<p class="general-body">GitHub</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-visualstudio-plain devicon--border"></i></div>
+					<p class="general-body">Visual Studio Code</p></div>
+					<div class="section--techs-skills-hover">
 					<div><i class="devicon-jquery-plain devicon--border"></i></div>
+					<p class="general-body">JQuery</p></div>
 				</div>
 			</div>
 		</section>
-		<section id="toPortfolio">
+		<!-- end of tech toolkit section -->
+		<!-- start of portfolio section -->
+		<section id="toPortfolio" class="section--portfolio-background">
 			<div class="section--header-center wow slideInLeft data-wow-duration="5s"">
 				<h3>Portfolio</h3>
 				<h4>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon</h4>
@@ -106,24 +134,24 @@
 						<img src="https://dummyimage.com/500x400/000/fff" alt="">
 					</div>
 					<div class="section--portfolio-text-buttons">
-						<p class="section--sub-heading">The Awkward Party Goer</p>
+						<p class="section--sub-heading section--portfolio-headings-in-boxes">The Awkward Party Goer <img src="public/styles/assets/birthday.png" class="section--portfolio-icons-balloon" alt="Birthday balloon icon"></p>
 						<p class="general-body">Using the LCBO API and the New York Times "Most Shared" API, The Awkward Party Goer let's users choose the type of party they're going to and their price range and gives them appropriate suggestions for talking points to help break the ice and a drink to pick up at the LCBO.</p>
-						<p class="general-body">
-							<span class="section--portfolio-bold">Used:</span> Javascript, JQuery, HTML5, CSS, Sass, Responsive Design, APIs.
+						<p class="general-body section--portfolio-text-used">
+							<span class="section--portfolio-bold">Used:</span> Javascript, JQuery, HTML5, CSS, Sass, Responsive Design, APIs, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="http://katiecodes.ca/TheAwkwardPartyGoer/" target="
-							_blank"class="button--green-filled">See Live</a>
+							_blank" class="button--green-filled section--portfolio-button-margin">See Live</a>
 							<a href="https://github.com/KaydeeDee/the-awkward-party-goer" class="button--green-filled">GitHub</a>
 						</div>
 					</div>
 				</div>
 				<div class="section--portfolio-two-col-right">
 					<div class="section--portfolio-text-buttons">
-						<p class="section--sub-heading">Let's Get Unparliamentary!</p>
+						<p class="section--sub-heading">Let's Get Unparliamentary! <img src="public/styles/assets/whiteleaf 70.png" class="section--portfolio-icons-leaf" alt="Maple leaf icon."> </p>
 						<p class="general-body">From the extremely tame to oddly personal, Let's Get Parliamentary! lets users experience what it's like to be insulted like a Canadian MP with randomally generated insults made up of "banned" parlimentary words and terms.</p>
 						<p class="general-body">
-							<span class="section--portfolio-bold">Used:</span> Javascript, JQuery, HTML5, CSS, Sass, Responsive Design.
+							<span class="section--portfolio-bold">Used:</span> Javascript, JQuery, HTML5, CSS, Sass, Responsive Design, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="http://katiecodes.ca/LetsGetUnparliamentary/" class="button--green-filled">See Live</a>
@@ -139,12 +167,12 @@
 						<img src="https://dummyimage.com/650x500/000/fff" alt="">
 					</div>
 					<div class="section--portfolio-text-buttons">
-						<p class="section--sub-heading">Life List</p>
+						<p class="section--sub-heading">Life List <i class="fa fa-thumb-tack" aria-hidden="true"></i></p>
 						<p class="general-body">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
 						leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 						pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 						<p class="general-body">
-							<span class="section--portfolio-bold">Used:</span> React, HTML5, CSS, Sass, Responsive Design, Firebase.
+							<span class="section--portfolio-bold">Used:</span> React, HTML5, CSS, Sass, Responsive Design, Firebase, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="http://katiecodes.ca/lifelist/" class="button--green-filled">See Live</a>
@@ -159,7 +187,7 @@
 						leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
 						pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 						<p class="general-body">
-							<span class="section--portfolio-bold">Used:</span> React, Firebase, HTML5, CSS, Sass, Responsive Design, API.
+							<span class="section--portfolio-bold">Used:</span> React, Firebase, HTML5, CSS, Sass, Responsive Design, API, Accessible Design.
 						</p>
 						<div class="section--portfolio-buttons">
 							<a href="https://project-six-3b01e.firebaseapp.com/" class="button--green-filled">See Live</a>
@@ -172,6 +200,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- end of portfolio section -->
+		<!-- start of soft skills section -->
 		<section id="toSoftSkills" class="section--soft-skills">
 			<div class="section--header-center wow slideInRight data-wow-duration="5s"">
 				<h3>Soft Skills</h3>
@@ -209,6 +239,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- end of soft skills section -->
+		<!-- start of contact me section -->
 		<section id="toContact" class="section--contact-me">
 			<div class="section--header-center wow slideInLeft data-wow-duration="5s"">
 				<h3>Contact Me</h3>
@@ -227,6 +259,7 @@
 				</form>
 			</div>
 		</section>
+		<!-- end of contact me section -->
 		<footer>
 			<div class="wrapper--inner section--footer">
 				<p class="general-body">This website was made by <a href="https://twitter.com/Kate_DAngelo">Katie D'Angelo!</a></p>

@@ -1,8 +1,8 @@
 .section--tech {
-    background: darken($white, 2);
+    background: lighten($black, 85);
     padding: 1px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .section--tech-skills-icons {
@@ -12,7 +12,11 @@
     max-width: 850px;
     margin: 0 auto;
     div {
-        margin: 30px 15px;
+        margin: 20px 10px;
+    }
+    p {
+        text-align: center;
+        font-weight: 400;
     }
 }
 
@@ -21,8 +25,23 @@
     color: $teal;
     padding: 15px;
     @include font-size-value(90);
+    transition: 0.4s;
     &:hover {
         color: $white;
         background: $teal;
+    }
+}
+
+.section--techs-skills-hover {
+    p {
+    transition: 0.4s;
+    font-family: $mont-text;
+    }
+}
+
+.section--techs-skills-hover:hover {
+    p {
+        color: $teal;
+        font-weight: 500;
     }
 }
