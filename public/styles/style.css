@@ -165,8 +165,8 @@ a {
   font-size: 1.8rem;
   padding: 10px 40px; }
   .button--green-filled:hover {
-    -webkit-box-shadow: 2px 2px 2px 2px #1e1e1e;
-            box-shadow: 2px 2px 2px 2px #1e1e1e; }
+    -webkit-box-shadow: 0 10px 6px -6px #383838;
+            box-shadow: 0 10px 6px -6px #383838; }
 
 .section--header-center {
   text-align: center;
@@ -257,8 +257,8 @@ nav, footer {
       font-weight: 700; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.6)), to(rgba(30, 30, 30, 0.6))), url(assets/header--background.jpeg);
-  background: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url(assets/header--background.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.6)), to(rgba(30, 30, 30, 0.6))), url(assets/header--background.jpg);
+  background: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url(assets/header--background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -516,7 +516,7 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center; }
   .section--contact-form form, .section--contact-form-name-email form {
-    width: 80%; }
+    width: 85%; }
 
 input, textarea {
   padding-left: 20px;
