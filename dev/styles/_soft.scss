@@ -10,9 +10,9 @@
     flex-wrap: wrap;
 }
 .section--soft-skills-boxes{
-    max-width: 500px;
-    max-height: 230px;
-    margin-top: 20px;
+    max-width: 520px;
+    min-height: 230px;
+    margin: 20px;
     i {
         color: $teal;
         @include font-size-value(22);
@@ -54,4 +54,38 @@
 
 .fa-users {
     padding-top: 1.1px;
+}
+
+@media (max-width: 1149px) {  
+    .section--soft-skills-boxes {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 1045px) {  
+    .section--soft-skills-boxes {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 915px) {  
+    .section--soft-skills-boxes {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section--soft-skills-boxes {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 630px) {
+ .section--soft-skills-boxes-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section--soft-skills-boxes {
+        max-width: 70%;
+    }
 }

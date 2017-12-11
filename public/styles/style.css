@@ -168,8 +168,8 @@ a {
   font-size: 1.8rem;
   padding: 10px 40px; }
   .button--green-filled:hover {
-    -webkit-box-shadow: 0 10px 6px -6px #383838;
-            box-shadow: 0 10px 6px -6px #383838; }
+    -webkit-box-shadow: 0 9px 4px -4px #5e5e5e;
+            box-shadow: 0 9px 4px -4px #5e5e5e; }
 
 .section--header-center {
   text-align: center;
@@ -233,7 +233,8 @@ nav {
     max-width: 72px;
     max-height: 72px;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    margin-left: 5px; }
 
 .nav--list {
   width: 70%; }
@@ -271,9 +272,6 @@ nav {
       font-weight: 700; }
 
 .nav--responsive-menu {
-  display: none; }
-
-.nav--responsive-menu {
   position: absolute;
   top: 30px;
   right: 50px;
@@ -281,7 +279,8 @@ nav {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  display: none; }
 
 .nav--responsive-menu input {
   display: block;
@@ -377,9 +376,7 @@ nav {
 
 @media (max-width: 1120px) {
   .nav--list {
-    display: none; }
-  .nav--responsive-menu {
-    display: block; } }
+    display: none; } }
 
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.5)), to(rgba(30, 30, 30, 0.5))), url(assets/header--background.jpg);
@@ -389,7 +386,10 @@ header {
   background-size: cover;
   background-position: center;
   padding: 1px;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 74px); }
+
+header h1, header h2, header a {
+  margin-left: 35px; }
 
 header h2, header h1 {
   color: white;
@@ -397,8 +397,8 @@ header h2, header h1 {
   font-family: "Montserrat", sans-serif; }
 
 header h2 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 30px;
+  font-size: 3rem;
   margin-top: 0;
   margin-bottom: 10px;
   letter-spacing: 1.5px; }
@@ -407,7 +407,8 @@ header h1 {
   font-size: 48px;
   font-size: 4.8rem;
   margin-top: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  max-width: 900px; }
 
 .header--name {
   color: #1bbc9b;
@@ -450,9 +451,56 @@ header h1 {
   .header--white-arrow img {
     max-width: 45px; }
 
-@media (max-width: 1167px) {
+@media (max-width: 1030px) {
+  .header--white-arrow {
+    margin-top: 16vh; } }
+
+@media (max-width: 770px) {
+  header h1 {
+    height: 150px; }
+  .header--white-arrow {
+    margin-top: 16vh; } }
+
+@media (max-width: 430px) {
+  header h1 {
+    height: 160px;
+    max-width: 330px; }
+  .header--white-arrow {
+    margin-top: 14vh; }
+  .header--text-center {
+    margin-top: 20vh; } }
+
+@media (max-width: 400px) {
+  header h1 {
+    height: 190px;
+    max-width: 280px;
+    font-size: 40px;
+    font-size: 4rem; }
+  .header--white-arrow {
+    margin-top: 14vh; }
+  .header--text-center {
+    margin-top: 16vh; } }
+
+@media (max-width: 350px) {
+  header h1 {
+    height: 190px;
+    max-width: 280px;
+    font-size: 40px;
+    font-size: 4rem;
+    margin-top: 20px; }
+  .header--white-arrow {
+    margin-top: 10vh; }
+  .header--text-center {
+    margin-top: 12vh; }
+  header a {
+    display: block;
+    max-width: 180px;
+    margin: 20px auto; }
   header h1, header h2, header a {
-    margin-left: 35px; } }
+    text-align: center; }
+  .header--white-arrow {
+    margin-left: 40%;
+    margin-top: 5vh; } }
 
 .section--about-me {
   background: white;
@@ -484,11 +532,31 @@ header h1 {
 .general-body span {
   font-weight: 500; }
 
-@media (max-width: 730px) {
+@media (max-width: 1206px) {
+  .section--about-me-portrait {
+    margin-top: 60px;
+    margin-left: 25px; }
+    .section--about-me-portrait img {
+      max-width: 330px; }
   .section-about-me--text {
-    max-width: 640px; }
+    max-width: 60%;
+    margin-right: 25px;
+    margin-left: 20px; } }
+
+@media (max-width: 1014px) {
+  .section-about-me--text {
+    max-width: 80%;
+    text-align: center; }
   .section--about-me-portrait {
     margin-top: 10px; } }
+
+@media (max-width: 619px) {
+  .section--about-me-portrait img {
+    max-width: 300px; } }
+
+@media (max-width: 420px) {
+  .section--about-me-portrait img {
+    max-width: 250px; } }
 
 .section--tech {
   background: #f2f2f2;
@@ -614,9 +682,9 @@ header h1 {
       flex-wrap: wrap; }
 
 .section--soft-skills-boxes {
-  max-width: 500px;
-  max-height: 230px;
-  margin-top: 20px; }
+  max-width: 520px;
+  min-height: 230px;
+  margin: 20px; }
   .section--soft-skills-boxes i {
     color: #1bbc9b;
     font-size: 22px;
@@ -652,6 +720,34 @@ header h1 {
 
 .fa-users {
   padding-top: 1.1px; }
+
+@media (max-width: 1149px) {
+  .section--soft-skills-boxes {
+    max-width: 470px; } }
+
+@media (max-width: 1045px) {
+  .section--soft-skills-boxes {
+    max-width: 400px; } }
+
+@media (max-width: 915px) {
+  .section--soft-skills-boxes {
+    max-width: 310px; } }
+
+@media (max-width: 900px) {
+  .section--soft-skills-boxes {
+    max-width: 270px; } }
+
+@media (max-width: 630px) {
+  .section--soft-skills-boxes-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section--soft-skills-boxes {
+    max-width: 70%; } }
 
 .section--contact-me {
   padding-top: 6vh;
@@ -753,14 +849,22 @@ textarea {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .section--contact-form button {
     width: 225px;
     height: 41px;
     margin: 20px auto; }
   textarea {
     min-height: 260px;
-    min-width: 378px; } }
+    min-width: 300px; } }
+
+@media (max-width: 440px) {
+  .section--contact-form-name-email {
+    margin-left: 18px;
+    margin-right: 0; } }
 
 footer {
   padding: 10px 0; }

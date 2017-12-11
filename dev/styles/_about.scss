@@ -34,12 +34,44 @@
 
 // media queries
 
-@media (max-width: 730px) { 
+@media (max-width: 1206px) {
+   .section--about-me-portrait {
+       margin-top: 60px;
+       margin-left: 25px;
+       img {
+       max-width: 330px;
+       }
+    } 
+     .section-about-me--text  {
+        max-width: 60%;
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1014px) { 
     .section-about-me--text  {
-        max-width: 640px;
+        max-width: 80%;
+        text-align: center;
     }
     .section--about-me-portrait {
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 619px) { 
+    .section--about-me-portrait {
+        img {
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 420px) { 
+    .section--about-me-portrait {
+        img {
+            max-width: 250px;
+        }
     }
 }
 

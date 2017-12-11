@@ -67,7 +67,7 @@ a {
     @include font-size-value(18);
     padding: 10px 40px;
     &:hover {
-        box-shadow: 0 10px 6px -6px lighten($black, 10);
+        box-shadow: 0 9px 4px -4px lighten($black, 25);
     }
 }
 

@@ -17,20 +17,22 @@ $(function () {
         })
     })
 
-    new WOW(
-        {
-            boxClass: 'wow',    
-            animateClass: 'animated', 
-            offset: 100,          
-            mobile: false,       
-            live: true  
-        }
-        ).init();
+    // new WOW(
+    //     {
+    //         boxClass: 'wow',    
+    //         animateClass: 'animated', 
+    //         offset: 100,          
+    //         mobile: false,       
+    //         live: true  
+    //     }
+    //     ).init();
 
     // Smooth scroll
     $('a').smoothScroll({
-        speed: 1200
+        speed: 1350
     });
+
+    $()
 
 });
 

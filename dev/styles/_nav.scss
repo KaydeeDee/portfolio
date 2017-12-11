@@ -13,6 +13,7 @@ nav {
         max-width: 72px;
         max-height: 72px;
         flex-shrink: 0;
+        margin-left: 5px;
     }
 }
 
@@ -51,15 +52,12 @@ nav {
 // menu toggling for responsive
 
 .nav--responsive-menu {
-    display: none;
-}
-
-.nav--responsive-menu {
     position: absolute;
     top: 30px;
     right: 50px;
     z-index: 1;
     user-select: none;
+    display: none;
 }
 
 .nav--responsive-menu input {
@@ -110,6 +108,7 @@ nav {
 }
 
 .nav--responsive-menu-list {
+    // display: none;
     position: absolute;
     width: 300px;
     max-height: 65vh;
@@ -158,7 +157,7 @@ nav {
     .nav--list {
         display: none;
     }
-    .nav--responsive-menu {
-        display: block;
-    }
+    // .nav--responsive-menu {
+    //     display: block;
+    // }
 }
