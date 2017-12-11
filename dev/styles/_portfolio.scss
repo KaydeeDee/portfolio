@@ -12,13 +12,11 @@
 
 .section--portfolio-two-col-left {
     flex-wrap: wrap;
+    text-align: left;
 }
 
 .section--portfolio-two-col-right {
     flex-wrap: wrap-reverse;
-}
-
-.section--portfolio-two-col-left {
     text-align: right;
 }
 
