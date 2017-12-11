@@ -52,12 +52,15 @@ nav {
 // menu toggling for responsive
 
 .nav--responsive-menu {
+    display: none;
     position: absolute;
-    top: 30px;
-    right: 50px;
+    top: 10px;
+    right: 20px;
     z-index: 1;
     user-select: none;
-    display: none;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
 }
 
 .nav--responsive-menu input {
@@ -76,6 +79,8 @@ nav {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
+    bottom: -13px;
+    left: 8px;
     background: $white;
     border-radius: 3px;
     z-index: 1;
@@ -107,15 +112,19 @@ nav {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
+
+.nav--responsive-menu-list--toggle {
+    display: none;
+    
+}
+
 .nav--responsive-menu-list {
-    // display: none;
-    position: absolute;
-    width: 300px;
-    max-height: 65vh;
-    margin: -150px 0 0 0;
-    padding: 50px;
-    padding-top: 125px;
-    right: -60px;
+    position: fixed;
+    max-width: 300px;
+    min-height: 65vh;
+    margin: -170px 0 0 0;
+    padding: 160px 60px 20px 25px;
+    right: -40px;
     background: rgba($black, 1);
     list-style-type: none;
     -webkit-font-smoothing: antialiased; 
@@ -125,27 +134,30 @@ nav {
     transition: transform 0.6s ease-in;
 }
 
-.nav--responsive-menu-list li {
-    padding: 10px 0;
-    font-size: 22px;
-}
-
 .nav--responsive-menu input:checked ~ ul {
     transform: scale(1.0, 1.0);
 }
 
+.nav--responsive-menu-list--first {
+    padding-top: 25px;
+}
+
+.nav--responsive-menu-list:last-child {
+    padding-bottom: 0;
+}
+
 .nav--responsive-menu-list{
     li {
-        margin-bottom: 20px;
+        margin: 35px 0;
     }
     li a {
         color: $white;
         font-weight: 400;
         font-family: $mont-text;
-        @include font-size-value(14);
+        @include font-size-value(16);
         text-transform: uppercase;
         border: 1px solid transparent;
-        padding: 15px;
+        padding: 15px 5px;
             &:hover {
                 border: 1px solid $teal;
                 font-weight: 700;
@@ -157,7 +169,10 @@ nav {
     .nav--list {
         display: none;
     }
-    // .nav--responsive-menu {
-    //     display: block;
-    // }
+    .nav--responsive-menu {
+        display: block;
+    }
+    .nav--responsive-menu-list {
+        min-height: 25vh;
+    }
 }

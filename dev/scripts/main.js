@@ -32,7 +32,11 @@ $(function () {
         speed: 1350
     });
 
-    $()
+    $(".nav--responsive-menu-a").on("click", function () {
+        $("#checkbox").prop("checked", false);
+    })
+
+    
 
 });
 

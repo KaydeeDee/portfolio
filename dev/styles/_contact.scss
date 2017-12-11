@@ -121,3 +121,10 @@ textarea {
         margin-right: 0;
     }
 }
+
+@media (max-width: 320px) {  
+      .form--name, .form--email  {
+          margin-right: 18px;
+          overflow-x: hidden;
+      } 
+}
