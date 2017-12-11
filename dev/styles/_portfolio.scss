@@ -87,12 +87,8 @@
 }
 .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     justify-content: center;
-}
-.section--portfolio-two-col-right {
-    margin-left: 20px;
-}
-.section--portfolio-two-col-left {
     margin-right: 20px;
+    margin-left: 20px;
 }
 }
 
@@ -102,7 +98,7 @@
     }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 480px) { 
   .section--portfolio-two-col-left, .section--portfolio-two-col-right {
       text-align: center;
   }  

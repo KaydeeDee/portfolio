@@ -3,6 +3,7 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 1px;
     min-height: calc(100vh - 74px);
 }
@@ -69,6 +70,12 @@ header {
 }
 
 // media queries
+
+@media (max-width: 1366px) { 
+header {
+        background-attachment: scroll;
+    }
+}
 
 @media (max-width: 1030px) { 
     .header--white-arrow {

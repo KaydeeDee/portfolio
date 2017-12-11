@@ -173,7 +173,9 @@ a {
 
 .section--header-center {
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -218,7 +220,7 @@ h4 {
 @media (max-width: 720px) {
   .section--header-center {
     max-width: 600px;
-    margin: 2vh auto; } }
+    margin: 2vh 20px; } }
 
 nav, footer {
   background: #1f2020;
@@ -288,11 +290,11 @@ nav {
 
 .nav--responsive-menu input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 50px;
+  height: 45px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  bottom: 1px;
+  left: 5px;
   opacity: 0;
   z-index: 2; }
 
@@ -398,6 +400,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 1px;
   min-height: calc(100vh - 74px); }
 
@@ -463,6 +466,10 @@ header h1 {
   text-align: center; }
   .header--white-arrow img {
     max-width: 45px; }
+
+@media (max-width: 1366px) {
+  header {
+    background-attachment: scroll; } }
 
 @media (max-width: 1030px) {
   .header--white-arrow {
@@ -691,17 +698,15 @@ header h1 {
   .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-  .section--portfolio-two-col-right {
-    margin-left: 20px; }
-  .section--portfolio-two-col-left {
-    margin-right: 20px; } }
+            justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px; } }
 
 @media (max-width: 720px) {
   .section--portfolio-image {
     margin-top: 20px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     text-align: center; }
   .section--portfolio-buttons {
