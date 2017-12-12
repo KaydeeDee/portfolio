@@ -346,7 +346,7 @@ nav {
   max-width: 300px;
   min-height: 65vh;
   margin: -170px 0 0 0;
-  padding: 160px 60px 20px 25px;
+  padding: 160px 60px 35px 25px;
   right: -40px;
   background: #1f2020;
   list-style-type: none;
@@ -371,7 +371,7 @@ nav {
   padding-bottom: 0; }
 
 .nav--responsive-menu-list li {
-  margin: 35px 0; }
+  margin: 35px 15px; }
 
 .nav--responsive-menu-list li a {
   color: white;
@@ -395,8 +395,8 @@ nav {
     min-height: 25vh; } }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 32, 32, 0.5)), to(rgba(31, 32, 32, 0.5))), url(assets/header--background.jpg);
-  background: linear-gradient(rgba(31, 32, 32, 0.5), rgba(31, 32, 32, 0.5)), url(assets/header--background.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 32, 32, 0.6)), to(rgba(31, 32, 32, 0.6))), url(assets/header--background.jpg);
+  background: linear-gradient(rgba(31, 32, 32, 0.6), rgba(31, 32, 32, 0.6)), url(assets/header--background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,8 +413,8 @@ header h2, header h1 {
   font-family: "Montserrat", sans-serif; }
 
 header h2 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 34px;
+  font-size: 3.4rem;
   margin-top: 0;
   margin-bottom: 10px;
   letter-spacing: 1.5px; }
@@ -471,17 +471,19 @@ header h1 {
   header {
     background-attachment: scroll; } }
 
-@media (max-width: 1030px) {
+@media (max-width: 1080px) {
   .header--white-arrow {
     margin-top: 16vh; } }
 
 @media (max-width: 980px) {
   .header--white-arrow {
-    margin-top: 15vh; } }
+    margin-top: 18vh; } }
 
 @media (max-width: 770px) {
   header h1 {
-    height: 150px; } }
+    height: 150px; }
+  .header--text-center {
+    margin-top: 17vh; } }
 
 @media (max-width: 430px) {
   header h1 {
@@ -499,9 +501,9 @@ header h1 {
     font-size: 40px;
     font-size: 4rem; }
   .header--white-arrow {
-    margin-top: 14vh; }
+    margin-top: 13vh; }
   .header--text-center {
-    margin-top: 16vh; } }
+    margin-top: 11vh; } }
 
 @media (max-width: 350px) {
   header h1 {
@@ -513,7 +515,7 @@ header h1 {
   .header--white-arrow {
     margin-top: 10vh; }
   .header--text-center {
-    margin-top: 12vh; }
+    margin-top: 10vh; }
   header a {
     display: block;
     max-width: 180px;
@@ -548,8 +550,8 @@ header h1 {
   max-width: 720px; }
   .section-about-me--text .section--sub-heading {
     font-weight: 600; }
-  .section-about-me--text button {
-    margin-top: 10px; }
+  .section-about-me--text .temporary {
+    margin-bottom: 30px; }
 
 .general-body span {
   font-weight: 500; }
@@ -693,7 +695,10 @@ header h1 {
       max-width: 90%; }
   .section--portfolio-text-buttons {
     max-width: 500px;
-    min-height: 400px; }
+    min-height: 400px;
+    padding: 15px; } }
+
+@media (max-width: 770px) {
   .section--portfolio-two-col-left, .section--portfolio-two-col-right {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -857,7 +862,8 @@ textarea {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-top: 20px; }
   .section--contact-social p {
     color: #1bbc9b;
     font-size: 18px;
@@ -884,6 +890,10 @@ textarea {
 .fa-stack {
   margin: 0 5px; }
 
+@media (max-width: 770px) {
+  .section--contact-social {
+    margin-top: 30px; } }
+
 @media (max-width: 720px) {
   .section--contact-form-name-email {
     -webkit-box-orient: vertical;
@@ -893,13 +903,9 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .form--name {
-    margin-bottom: 20px;
-    margin-top: 10px; }
-  .form--email {
-    margin-right: 20px; }
   .form--name, .form--email {
-    min-width: 292px; }
+    width: 292px;
+    margin: 10px auto; }
   form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -917,17 +923,22 @@ textarea {
     margin: 20px auto; }
   textarea {
     min-height: 260px;
-    min-width: 300px; } }
+    width: 315px; } }
 
 @media (max-width: 440px) {
-  .section--contact-form-name-email {
-    margin-left: 18px;
-    margin-right: 0; } }
+  .section--contact-form-name-email, textarea {
+    margin: 0 auto; }
+  .form--name, .form--email {
+    width: 240px; }
+  textarea {
+    max-width: 395px; } }
 
 @media (max-width: 320px) {
-  .form--name, .form--email {
-    margin-right: 18px;
-    overflow-x: hidden; } }
+  .form--name, .form--email, textarea {
+    margin: 5px 10px;
+    overflow-x: hidden; }
+  textarea {
+    max-width: 292px; } }
 
 footer {
   padding: 10px 0; }

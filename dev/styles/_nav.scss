@@ -123,7 +123,7 @@ nav {
     max-width: 300px;
     min-height: 65vh;
     margin: -170px 0 0 0;
-    padding: 160px 60px 20px 25px;
+    padding: 160px 60px 35px 25px;
     right: -40px;
     background: rgba($black, 1);
     list-style-type: none;
@@ -148,7 +148,7 @@ nav {
 
 .nav--responsive-menu-list{
     li {
-        margin: 35px 0;
+        margin: 35px 15px;
     }
     li a {
         color: $white;

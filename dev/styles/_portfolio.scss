@@ -82,11 +82,14 @@
     .section--portfolio-text-buttons {
     max-width: 500px;
     min-height: 400px;
+    padding: 15px;
 }
-.section--portfolio-two-col-left, .section--portfolio-two-col-right {
-    justify-content: center;
-    margin-right: 20px;
-    margin-left: 20px;
+}
+@media (max-width: 770px) { 
+    .section--portfolio-two-col-left, .section--portfolio-two-col-right {
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 20px;
 }
 }
 

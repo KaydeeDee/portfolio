@@ -49,6 +49,7 @@ textarea {
     display: flex;
     align-items: center;
     flex-direction: column;
+     margin-top: 20px;
     p {
         color: $teal;
         @include font-size-value(18);
@@ -82,22 +83,20 @@ textarea {
 }
 
 // media queries
+@media (max-width: 770px) { 
+    .section--contact-social {
+        margin-top: 30px;
+    }
+}
 
 @media (max-width: 720px) {  
     .section--contact-form-name-email {
         flex-direction: column;
         align-items: center;
     }
-    .form--name {
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-    .form--email {
-        margin-right: 20px;
-        
-    }
     .form--name, .form--email {
-        min-width: 292px;
+        width: 292px;
+        margin: 10px auto;
     }
     form {
         display: flex;
@@ -111,20 +110,28 @@ textarea {
     }
     textarea {
         min-height: 260px;
-        min-width: 300px;
+        width: 315px;
     }
 }
 
 @media (max-width: 440px) {  
-      .section--contact-form-name-email {
-        margin-left: 18px;
-        margin-right: 0;
+    .section--contact-form-name-email, textarea {
+        margin: 0 auto;
+    }
+    .form--name, .form--email {
+        width: 240px;
+    }
+     textarea {
+        max-width: 395px;
     }
 }
 
 @media (max-width: 320px) {  
-      .form--name, .form--email  {
-          margin-right: 18px;
-          overflow-x: hidden;
+    .form--name, .form--email, textarea {
+        margin: 5px 10px;
+        overflow-x: hidden;
       } 
+      textarea {
+        max-width: 292px;
+    }
 }
