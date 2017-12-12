@@ -29,14 +29,10 @@
     display: inline-block;
 }
 
-.section--soft-skills-boxes:hover {
-    .section--sub-heading {
-        color: $teal;
-    }
+.section--soft-skills-boxes {
     .section--soft-skills-boxes-diag {
-        background: $teal;
         i {
-            color: $white;
+            color: $teal;
         }
     }
 }

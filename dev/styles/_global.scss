@@ -66,6 +66,7 @@ a {
     border-radius: 0;
     @include font-size-value(18);
     padding: 10px 40px;
+    transition: 0.4s;
     &:hover {
         box-shadow: 0 9px 4px -4px lighten($black, 25);
     }
@@ -81,12 +82,13 @@ a {
     h4 {
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 8px;
     }
 }
 
 h3 {
     font-family: $mont-text;
-    @include font-size-value(30);
+    @include font-size-value(32);
     font-weight: 500;
     color: $black;
     margin: 0;
@@ -95,7 +97,7 @@ h3 {
 
 h4 {
     font-family: $mont-text;
-    @include font-size-value(14);
+    @include font-size-value(20);
     font-weight: 300;
     color: $grey;
     margin-top: 5px;
@@ -111,14 +113,14 @@ h4 {
 
 .section--sub-heading {
     font-family: $ral-text;
-    @include font-size-value(24);
+    @include font-size-value(22);
 }
 
 // p settings 
 
 .general-body, input, textarea {
     font-family: $ral-text;
-    @include font-size-value(14);
+    @include font-size-value(16.8);
     font-weight: 300;
     line-height: 26px;
     color: $grey;

@@ -38,10 +38,11 @@ nav {
         color: $white;
         font-weight: 400;
         font-family: $mont-text;
-        @include font-size-value(14);
+        @include font-size-value(15);
         text-transform: uppercase;
         border: 1px solid transparent;
         padding: 15px;
+        transition: 0.4s;
             &:hover {
                 border: 1px solid $teal;
                 font-weight: 700;
@@ -154,10 +155,11 @@ nav {
         color: $white;
         font-weight: 400;
         font-family: $mont-text;
-        @include font-size-value(16);
+        @include font-size-value(17);
         text-transform: uppercase;
         border: 1px solid transparent;
         padding: 15px 5px;
+        transition: 0.4s;
             &:hover {
                 border: 1px solid $teal;
                 font-weight: 700;

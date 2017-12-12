@@ -20,6 +20,7 @@
 
 .section-about-me--text {
     max-width: 720px;
+    padding-top: 25px;
     .section--sub-heading {
         font-weight: 600; 
     }
@@ -36,10 +37,10 @@
 
 @media (max-width: 1206px) {
    .section--about-me-portrait {
-       margin-top: 60px;
+    //    margin-top: 60px;
        margin-left: 25px;
        img {
-       max-width: 330px;
+       max-width: 380px;
        }
     } 
      .section-about-me--text  {
@@ -49,13 +50,19 @@
     }
 }
 
-@media (max-width: 1014px) { 
+@media (max-width: 1114px) { 
     .section-about-me--text  {
         max-width: 80%;
         text-align: center;
     }
     .section--about-me-portrait {
         margin-top: 10px;   
+    }
+}
+
+@media (max-width: 1165px) { 
+    .section-about-me--text  {
+        padding-top: 0;
     }
 }
 

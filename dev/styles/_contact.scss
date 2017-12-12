@@ -69,6 +69,14 @@ textarea {
     color: $teal;
 }
 
+.fa-stack {
+    transition: 0.5s ease;
+}
+
+.fa-circle, .fa-stack-1x {
+    transition: 0.5s ease;
+}
+
 .fa-stack:hover {
     .fa-circle {
         color: $white;
