@@ -23,9 +23,6 @@
     .section--sub-heading {
         font-weight: 600; 
     }
-    // button {
-    //     margin-top: 10px;
-    // }
     .temporary {
         margin-bottom: 30px;
     }
@@ -66,6 +63,7 @@
     .section--about-me-portrait {
         img {
             max-width: 300px;
+            transform: translateX(-17px);
         }
     }
 }

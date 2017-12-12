@@ -61,12 +61,17 @@ header {
 
 .header--white-arrow {
     margin-left: 50%;
-    margin-top: 25vh;
+    margin-top: 22vh;
     display: inline-block;
     text-align: center;
+    transform: translateX(-50%);
     img {
     max-width: 45px;
     }
+}
+
+.section--header-a:hover {
+    box-shadow: 0 9px 4px -4px lighten($black, 10);
 }
 
 // media queries
@@ -111,18 +116,30 @@ header {
     }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 460px) { 
     header h1 {
         height: 190px;
         max-width: 280px;
         @include font-size-value(40)
     }
     .header--white-arrow {
-        margin-top: 13vh;
+        margin-top: 12vh;
     }
     .header--text-center {
-    margin-top: 11vh;
+    margin-top: 10.5vh;
     }
+     header a {
+        display: block;
+        max-width: 180px;
+        margin: 20px auto;
+    }
+     header h1, header h2, header a {
+        text-align: center;
+        margin: 5px auto;
+     }
+     header h1 {
+         max-width: 320px;
+     }
 }
 
 @media (max-width: 350px) { 
@@ -138,16 +155,8 @@ header {
     .header--text-center {
     margin-top: 10vh;
     }
-    header a {
-        display: block;
-        max-width: 180px;
-        margin: 20px auto;
-    }
-     header h1, header h2, header a {
-        text-align: center;
-     }
      .header--white-arrow {
-        margin-left: 40%;
+        // margin-left: 40%;
         margin-top: 5vh;
      }
 }
