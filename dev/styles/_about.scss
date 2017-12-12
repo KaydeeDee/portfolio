@@ -55,7 +55,13 @@
         text-align: center;
     }
     .section--about-me-portrait {
-        margin-top: 10px;
+        margin-top: 10px;   
+    }
+}
+
+@media (max-width: 720px) { 
+    .section--about-me-portrait,.section-about-me--text {
+        margin: 0 auto;
     }
 }
 
@@ -63,7 +69,6 @@
     .section--about-me-portrait {
         img {
             max-width: 300px;
-            transform: translateX(-17px);
         }
     }
 }

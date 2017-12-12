@@ -220,7 +220,7 @@ h4 {
 @media (max-width: 720px) {
   .section--header-center {
     max-width: 600px;
-    margin: 2vh 20px; } }
+    margin: 2vh auto; } }
 
 nav, footer {
   background: #1f2020;
@@ -454,7 +454,8 @@ header h1 {
     opacity: 1; } }
 
 .header--text-center {
-  margin-top: 30vh; }
+  margin-top: 30vh;
+  margin: 0 auto; }
 
 .fa-chevron-down {
   color: white; }
@@ -582,11 +583,13 @@ header h1 {
   .section--about-me-portrait {
     margin-top: 10px; } }
 
+@media (max-width: 720px) {
+  .section--about-me-portrait, .section-about-me--text {
+    margin: 0 auto; } }
+
 @media (max-width: 619px) {
   .section--about-me-portrait img {
-    max-width: 300px;
-    -webkit-transform: translateX(-17px);
-            transform: translateX(-17px); } }
+    max-width: 300px; } }
 
 @media (max-width: 420px) {
   .section--about-me-portrait img {
