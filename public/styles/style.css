@@ -639,12 +639,7 @@ header h1 {
   color: #1bbc9b;
   padding: 15px;
   font-size: 83px;
-  font-size: 8.3rem;
-  -webkit-transition: 0.4s;
-  transition: 0.4s; }
-  .devicon--border:hover {
-    color: white;
-    background: #1bbc9b; }
+  font-size: 8.3rem; }
 
 .section--techs-skills-hover p {
   -webkit-transition: 0.4s;
@@ -845,7 +840,7 @@ header h1 {
   .section--soft-skills-boxes {
     max-width: 70%; }
   .section--soft-skills-boxes-diag {
-    margin-left: 43%; }
+    margin-left: 47%; }
   .section--soft-skills-sub-headings {
     text-align: center; } }
 

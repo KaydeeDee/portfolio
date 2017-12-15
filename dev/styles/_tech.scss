@@ -25,11 +25,6 @@
     color: $teal;
     padding: 15px;
     @include font-size-value(83);
-    transition: 0.4s;
-    &:hover {
-        color: $white;
-        background: $teal;
-    }
 }
 
 .section--techs-skills-hover {
