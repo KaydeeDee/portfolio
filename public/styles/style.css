@@ -873,13 +873,12 @@ button {
   margin-top: 20px; }
 
 textarea {
-  overflow: hidden;
+  overflow-y: auto;
   resize: none;
   min-width: 100%;
   padding-bottom: 200px;
   margin-top: 20px;
-  padding-top: 20px;
-  overflow-y: scroll; }
+  padding-top: 20px; }
 
 .section--contact-form img {
   max-width: 17px; }
@@ -929,6 +928,16 @@ textarea {
 
 .fa-stack {
   margin: 0 5px; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 @media (max-width: 770px) {
   .section--contact-social {

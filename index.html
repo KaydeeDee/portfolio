@@ -33,53 +33,53 @@
 <!-- Maple Leaf by Viktor Ostrovsky from the Noun Project -->
 <!-- Animals in Bathtub by Becris from the Noun Project -->
 <!-- Design by Designideaz -->
-<body>
-	<main class="wrapper--max">
-		<!-- start of nav -->
-		<nav id="home">
-			<div class="wrapper--inner nav--flex-overall">
-				<div class="nav--logo">
-					<img src="public/styles/assets/KDlogo_letters.png" alt="Katie D'Angelo Logo that is the letter K and D">
-				</div>
-				<div class="nav--list">
-					<ul class="nav--flex-list">
-						<li><a href="#home">home</a></li>
-						<li> <a href="#toAbout">about</a></li>
-						<li><a href="#toTechTools">tech toolbox</a></li>
-						<li><a href="#toPortfolio">portfolio</a></li>
-						<li><a href="#toSoftSkills">essential skills</a></li>
-						<li><a href="#toContact">contact</a></li>
-					</ul>
-				</div>
-				<div class="nav--responsive-menu">
-					<input type="checkbox" id="checkbox">
-					<span></span>
-					<span></span>
-					<span></span>
-					<ul class="nav--responsive-menu-list">
-						<li class="nav--responsive-menu-list--first"><a href="#home" class="nav--responsive-menu-a">home</a></li>
-						<li><a href="#toAbout" class="nav--responsive-menu-a">about</a></li>
-						<li><a href="#toTechTools" class="nav--responsive-menu-a">tech toolbox</a></li>
-						<li><a href="#toPortfolio" class="nav--responsive-menu-a">portfolio</a></li>
-						<li><a href="#toSoftSkills" class="nav--responsive-menu-a">essential skills</a></li>
-						<li><a href="#toContact" class="nav--responsive-menu-a">contact</a></li>
-					</ul>
-				</div>
+<body class="wrapper--max">
+	<!-- start of nav -->
+	<nav id="home">
+		<div class="wrapper--inner nav--flex-overall">
+			<div class="nav--logo">
+				<img src="public/styles/assets/KDlogo_letters.png" alt="Katie D'Angelo Logo that is the letter K and D">
 			</div>
-		</nav>
-		<!-- end of nav -->
-		<!-- start of header -->
-		<header>
-			<div class="wrapper--inner">
-				<div class="header--text-center">
-					<h2>Hi, I'm <span class="header--name">Katie!</span></h2>
-					<h1>I'm <span class="header--typed"></span></h1>
-					<a href="#toContact"class="button--green-filled section--header-a">Contact Me</a>
-				</div>
-				<a href="#toAbout" class="header--white-arrow"><img src="public/styles/assets/white-arrow.png" alt="white chevron pointing down. Click on it to move to the next window." class="animated bounce"></a>
+			<div class="nav--list">
+				<ul class="nav--flex-list">
+					<li><a href="#home">home</a></li>
+					<li> <a href="#toAbout">about</a></li>
+					<li><a href="#toTechTools">tech toolbox</a></li>
+					<li><a href="#toPortfolio">portfolio</a></li>
+					<li><a href="#toSoftSkills">essential skills</a></li>
+					<li><a href="#toContact">contact</a></li>
+				</ul>
 			</div>
-		</header>
-		<!-- end of header -->
+			<div class="nav--responsive-menu">
+				<input type="checkbox" id="checkbox">
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul class="nav--responsive-menu-list">
+					<li class="nav--responsive-menu-list--first"><a href="#home" class="nav--responsive-menu-a">home</a></li>
+					<li><a href="#toAbout" class="nav--responsive-menu-a">about</a></li>
+					<li><a href="#toTechTools" class="nav--responsive-menu-a">tech toolbox</a></li>
+					<li><a href="#toPortfolio" class="nav--responsive-menu-a">portfolio</a></li>
+					<li><a href="#toSoftSkills" class="nav--responsive-menu-a">essential skills</a></li>
+					<li><a href="#toContact" class="nav--responsive-menu-a">contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end of nav -->
+	<!-- start of header -->
+	<header>
+		<div class="wrapper--inner">
+			<div class="header--text-center">
+				<h2>Hi, I'm <span class="header--name">Katie!</span></h2>
+				<h1>I'm <span class="header--typed"></span></h1>
+				<a href="#toContact"class="button--green-filled section--header-a">Contact Me</a>
+			</div>
+			<a href="#toAbout" class="header--white-arrow"><img src="public/styles/assets/white-arrow.png" alt="white chevron pointing down. Click on it to move to the next window." class="animated bounce"></a>
+		</div>
+	</header>
+	<!-- end of header -->
+	<main>
 		<!-- start of about me section -->
 		<section class="section--about-me" id="toAbout">
 			<div class="wrapper--inner">
@@ -165,7 +165,7 @@
 						<p class="section--sub-heading section--sub-heading-coding-type">JavaScript & Design Project</p>
 						<p class="section--sub-heading section--portfolio-headings-in-boxes">Client Portfolio<img src="public/styles/assets/SKM-favicon.png"
 							 class="section--portfolio-icons-SMK" alt="Spencer Monckton's Favicon."> </p>
-						<p class="general-body">Working with the client, I designed and created their personal portfolio website to both reflect who they are while meeting the needs of the diverse audience the portfolio is designed to attact.</p>
+						<p class="general-body">Working directly with the client, I designed and created their personal portfolio to reflect their work and personality while meeting the needs of their target audience.</p>
 						<p class="general-body section--portfolio-text-used">
 							<span class="section--portfolio-bold">Used:</span> JavaScript(ES6), JQuery, HTML5, CSS, Sass, Responsive Design,
 							Accessible Design.
@@ -293,10 +293,14 @@
 			<div class="wrapper--inner section--contact-form">
 				<form action="https://formspree.io/hello@katiecodes.ca" method="POST">
 					<div class="section--contact-form-name-email">
-						<input type="text" name="name" placeholder="Your name" class="section--contact-form-top form--name" required="true">
-						<input type="email" name="_replyto" placeholder="Your email address" class="section--contact-form-top form--email" required="true">
+						<label for="nameValue" class="visuallyhidden">Name:</label>
+						<input type="text" name="name" placeholder="Your name" class="section--contact-form-top form--name" required="true" id="nameValue">
+
+						<label for="emailValue" class="visuallyhidden">Your Email Address:</label>
+						<input type="email" id="emailValue" name="_replyto" placeholder="Your email address" class="section--contact-form-top form--email" required="true">
 					</div>
-					<textarea name="text" wrap="soft" class="section--contact-form-message" placeholder="How can we work together?" required="true"></textarea>
+					<label for="messageValue" class="visuallyhidden">Your Message:</label>
+					<textarea name="text" wrap="soft" id="messageValue" class="section--contact-form-message" placeholder="How can we work together?" required="true"></textarea>
 
 					<button type="submit" value="Send Message" class="button--green-filled">Send Message <img src="public/styles/assets/envlope.png" alt="Envelope icon"></button>
 				</form>
@@ -317,27 +321,22 @@
 						<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
 					</span></a></div>
-
-					<!-- <div><a href="https://medium.com/@kd.dangelo" target="_blank"><span class="fa-stack fa-lg fa-3x">
-						<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-						<i class="fa fa-medium fa-stack-1x fa-inverse" aria-hidden="true"></i>
-					</span></a></div> -->
 				</div>
 				<div>
 					<p>hello@<span class="anti-bot">foo</span>katie<span class="anti-bot">no bots for me</span>codes.ca</p>
 				</div>
 			</div>
 		</section>
-		<!-- end of contact me section -->
-		<footer>
-			<div class="wrapper--inner section--footer">
-				<p class="general-body">This website was made by <a href="https://twitter.com/Kate_DAngelo">Katie D'Angelo!</a></p>
-			</div>
-			<div class="section--footer-side-by-side wrapper--footer">
-				<p class="general-body">Headshot by Pam Lau</p>
-			</div>
-		</footer>
 	</main>
+	<!-- end of contact me section -->
+	<footer>
+		<div class="wrapper--inner section--footer">
+			<p class="general-body">This website was made by <a href="https://twitter.com/Kate_DAngelo">Katie D'Angelo!</a></p>
+		</div>
+		<div class="section--footer-side-by-side wrapper--footer">
+			<p class="general-body">Headshot by Pam Lau</p>
+		</div>
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
