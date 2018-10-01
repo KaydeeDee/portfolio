@@ -51,10 +51,6 @@
     margin-right: 10px;
 }
 
-.section--portfolio-bold {
-    font-weight: 500;
-}
-
 .section--portfolio-text-used {
     margin: 25px 0;
 }
@@ -65,8 +61,13 @@
     vertical-align: top;
 }
 
-.section--portfolio-icons-balloon {
+.section--portfolio-icons-balloon,
+.section--portfolio-icons-SMK {
     width: 24px;
+}
+
+.section--portfolio-icons-SMK {
+    margin-left: 5px;
 }
 
 .section--portfolio-icons-leaf,.section--portfolio-icons-animal {

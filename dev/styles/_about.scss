@@ -1,7 +1,6 @@
 .section--about-me {
     background: $white;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding: 6vh 0;
 }
 
 .section--about-me-two-col {
@@ -37,7 +36,6 @@
 
 @media (max-width: 1206px) {
    .section--about-me-portrait {
-    //    margin-top: 60px;
        margin-left: 25px;
        img {
        max-width: 380px;

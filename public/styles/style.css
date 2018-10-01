@@ -550,8 +550,7 @@ header h1 {
 
 .section--about-me {
   background: white;
-  padding-top: 6vh;
-  padding-bottom: 6vh; }
+  padding: 6vh 0; }
 
 .section--about-me-two-col {
   display: -webkit-box;
@@ -703,17 +702,18 @@ header h1 {
 .section--portfolio-button-margin-right {
   margin-right: 10px; }
 
-.section--portfolio-bold {
-  font-weight: 500; }
-
 .section--portfolio-text-used {
   margin: 25px 0; }
 
 .section--portfolio-icons-balloon, .section--portfolio-icons-leaf {
   vertical-align: top; }
 
-.section--portfolio-icons-balloon {
+.section--portfolio-icons-balloon,
+.section--portfolio-icons-SMK {
   width: 24px; }
+
+.section--portfolio-icons-SMK {
+  margin-left: 5px; }
 
 .section--portfolio-icons-leaf, .section--portfolio-icons-animal {
   width: 31px; }

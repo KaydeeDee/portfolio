@@ -17,15 +17,15 @@ $(function () {
         })
     })
 
-    new WOW(
-        {
-            boxClass: 'wow',    
-            animateClass: 'animated', 
-            offset: 100,          
-            mobile: false,       
-            live: true  
-        }
-        ).init();
+    // new WOW(
+    //     {
+    //         boxClass: 'wow',    
+    //         animateClass: 'animated', 
+    //         offset: 100,          
+    //         mobile: false,       
+    //         live: true  
+    //     }
+    //     ).init();
 
     // Smooth scroll
     $('a').smoothScroll({
